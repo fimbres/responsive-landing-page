@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mi Página Responsiva</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Nuestra Aplicación</h1>
+                <h2>¡Te cambiara la vida por completo!</h2>
+                <a class="btn">Descargar ahora</a>
+            </div>
+            <script>
+            $(function() 
+            { 
+                $(".btn").click(function(){
+                    $(".submenu").slideToggle(500);
+                });
+            });</script>
+            <div class="submenu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+            </div>
+        </header>
+        <section class="features">
+            <div class="container">
+                <div class="feature">
+                    <img src="/images/1.png" alt="" />
+                    <p>La App soporta 4G.</p>
+                </div>
+                <div class="feature">
+                    <img src="/images/2.png" alt=""/>
+                    <p>La App es compatible con todos los dispositivos.</p>
+                </div>
+                <div class="feature">
+                    <img src="/images/3.jpg" alt=""/>
+                    <p>La App soporta Internet.</p>
+                </div>
+            </div>
+        </section>
+        <section class="quote">
+            <blockquote class="container">
+                <p>¡Esta App cambió mi vida!</p>
+                <cite>Isaac Fimbres</cite>
+            </blockquote>
+        </section>
+    </body>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Inico</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <p> &copy; Copyright Isaac Fimbres 2022 </p> 
+        </div>
+    </footer>
+</html>
